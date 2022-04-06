@@ -73,7 +73,7 @@ function deleteNote(index) {
 
 let search = document.getElementById("searchTxt");
 search.addEventListener("input", function () {
-  let inputValue = search.value.toLowerCase();
+  let inputValue = search.value;
   let noteCards = document.getElementsByClassName("noteCard");
   Array.from(noteCards).forEach(function (element) {
     //card ke andar ka value nikalo fr match karao input value se
